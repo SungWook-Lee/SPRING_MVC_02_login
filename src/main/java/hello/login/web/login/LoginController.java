@@ -95,9 +95,6 @@ public class LoginController {
         HttpSession session = request.getSession();
         //셰션 로그인 성공 회원 정보 저장
         session.setAttribute(SessionConst.LOGIN_MEMBER, loginMember);
-        //세션 관리자를 통해 세션을 생성하고, 회원 데이터를 보관
-        //sessionManager.createSession(loginMember, response);
-
         return "redirect:/";
     }
 
